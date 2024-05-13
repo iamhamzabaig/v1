@@ -48,6 +48,7 @@ a,
 nav,
 .nav-links {
 	display: flex;
+	align-items: center;
 }
 
 nav {
@@ -91,6 +92,24 @@ a:hover {
 
 .logo:hover {
 	cursor: default;
+}
+
+/*resume button*/
+.resumeBtn {
+	cursor: pointer;
+	font-family: SFMono, monospace;
+	color: var(--fonts-color);
+	font-size: small;
+	border: 1.7px solid var(--links-color);
+	border-radius: 2px;
+	padding: 0.6rem 1rem;
+	background-color: transparent;
+	transition: all 0.4s ease-in-out;
+}
+
+.resumeBtn:hover {
+	transform: translate(-3px, -2px);
+	box-shadow: 2px 2px var(--links-color);
 }
 
 /* HAMBURGER MENU */
@@ -198,9 +217,18 @@ section {
 
 .section__pic-container {
 	display: flex;
-	height: 400px;
+	height: 200px;
 	width: 400px;
-	margin: auto 0;
+	margin: auto 2;
+	/* filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue); */
+}
+.img__main {
+	filter: brightness(40%);
+
+	transition: all 0.7s;
+}
+.img__main:hover {
+	filter: none;
 }
 
 .section__text {
